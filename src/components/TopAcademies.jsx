@@ -60,7 +60,7 @@ const TopAcademies = () => {
   return (
     <section className="bg-blue-100 py-12">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-semibold text-gray-800 mb-6">
+        <h2 className="text-3xl font-semibold text-gray-800 mb-6 text-left">
           Explore Our Top Academies
         </h2>
         <div className="flex flex-row overflow-hidden space-x-4">
