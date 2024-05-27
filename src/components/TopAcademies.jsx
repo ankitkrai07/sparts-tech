@@ -58,7 +58,7 @@ const TopAcademies = () => {
   }, []);
 
   return (
-    <section className="bg-blue-400 py-12 mt-1">
+    <section className="bg-blue-400 py-12 mt-0 px-12">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-semibold text-white mb-6 text-left">
           Explore Our Top <br />

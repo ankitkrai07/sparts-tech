@@ -96,7 +96,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="bg-gray-100 py-12">
+    <section className="bg-gray-100 py-12 px-12">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-semibold text-orange-400 mb-6 text-right">
           Happy Kids,
