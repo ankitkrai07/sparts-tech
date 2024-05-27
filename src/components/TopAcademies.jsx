@@ -58,10 +58,11 @@ const TopAcademies = () => {
   }, []);
 
   return (
-    <section className="bg-blue-100 py-12">
+    <section className="bg-blue-400 py-12 mt-1">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-semibold text-gray-800 mb-6 text-left">
-          Explore Our Top Academies
+        <h2 className="text-3xl font-semibold text-white mb-6 text-left">
+          Explore Our Top <br />
+          Academies
         </h2>
         <div className="flex flex-row overflow-hidden space-x-4">
           {academies

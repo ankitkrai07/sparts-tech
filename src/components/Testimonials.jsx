@@ -98,11 +98,11 @@ const Testimonials = () => {
   return (
     <section className="bg-gray-100 py-12">
       <div className="container mx-auto text-center">
-        <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-right">
-          Happy Kids<br></br>
+        <h2 className="text-3xl font-semibold text-orange-400 mb-6 text-right">
+          Happy Kids,
+          <br />
           Satisfied Parents!
         </h2>
-
         <div className="flex flex-row overflow-hidden space-x-4">
           {testimonial
             .slice(currentTestimonial, currentTestimonial + 3)
@@ -111,16 +111,22 @@ const Testimonials = () => {
                 key={testimonial.id}
                 className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-4"
               >
-                <div className="bg-white p-6 rounded-lg shadow-lg">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="rounded-full w-40 h-40 mx-auto mb-4"
-                  />
-                  <h3 className="text-lg font-semibold mb-2">
-                    {testimonial.name}
-                  </h3>
-                  <p className="text-gray-700">{testimonial.description}</p>
+                <div className="bg-white p-4 rounded-lg shadow-lg h-48 flex flex-col justify-between">
+                  <p className="text-gray-700 text-left italic">
+                    “{testimonial.description}”
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <div className="text-left">
+                      <h3 className="text-lg font-semibold">
+                        {testimonial.name}
+                      </h3>
+                    </div>
+                    <img
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      className="rounded-full w-16 h-16"
+                    />
+                  </div>
                 </div>
               </div>
             ))}
