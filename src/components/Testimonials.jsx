@@ -90,7 +90,7 @@ const Testimonials = () => {
       setCurrentTestimonial((prevIndex) =>
         prevIndex === testimonial.length - 3 ? 0 : prevIndex + 1
       );
-    }, 2000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);

@@ -4,38 +4,43 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const academies = [
   {
     id: 1,
-    name: "Academy One",
+    name: "National Academy",
     place: "New York",
     description: "Best academy for sports",
-    image: "https://example.com/academy1.jpg",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuAC8HBb0kZviQmwgvFOTaTAOx0W5AjghXdw&s",
   },
   {
     id: 2,
-    name: "Academy Two",
+    name: "IMG Academy",
     place: "California",
     description: "Top-notch music academy",
-    image: "https://example.com/academy2.jpg",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTANwDuYP5dvG_YaN4TQXxf53cavMSPzAFqyA&s",
   },
   {
     id: 3,
-    name: "Academy Three",
+    name: "United World Academy",
     place: "Texas",
     description: "Premier dance academy",
-    image: "https://example.com/academy3.jpg",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrIx4Gds1spGw1Okuu-wgaRU2PA4_riiM7Qg&s",
   },
   {
     id: 4,
-    name: "Academy Four",
-    place: "Florida",
+    name: "Reliance Academy",
+    place: "Mumbai",
     description: "Excellent art academy",
-    image: "https://example.com/academy4.jpg",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxvlJRRg5zHlEF3Bb9yHkknm1dyZh2IeCNNQ&s",
   },
   {
     id: 5,
-    name: "Academy Five",
+    name: "Faith Academy",
     place: "Nevada",
     description: "Outstanding science academy",
-    image: "https://example.com/academy5.jpg",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOprazvtsZ-jIkYwaKG4Wcp9F_66uUHu5nHA&s",
   },
 ];
 
@@ -47,7 +52,7 @@ const TopAcademies = () => {
       setCurrentAcademy((prevIndex) =>
         prevIndex === academies.length - 3 ? 0 : prevIndex + 1
       );
-    }, 2000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
